@@ -1,0 +1,237 @@
+:root {
+    --first: #00385d;
+    --second: #e50022;
+    --third: #ffffff;
+}
+
+#main-container {
+    color: var(--third);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#brand-name {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 50px;
+    height: 50%;
+}
+
+#brand-name h1 {
+    color: var(--third);
+}
+
+#brand-name p {
+    font-size: 30px;
+    color: var(--third);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#product-category {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-card {
+    background: var(--second);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.product-card:hover {
+    transform: scale(1.5);
+    box-shadow: 0 10px 20px var(--third);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card p,
+h3 {
+    background-color: var(--second);
+    color: var(--third);
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.idxLinks {
+    background-color: var(--second);
+    color: var(--second);
+}
+
+.custom-request-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-request-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.custom-request-section form input {
+    height: 45px;
+    /* ya jitni chaahe fixed height */
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+    margin: auto;
+    padding: 12px 24px;
+    background-color: var(--third);
+    color: var(--third);
+    border-radius: 6px;
+    transition: var(--second) 0.3s ease;
+}
+
+.custom-request-section textarea {
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+    margin: auto;
+    padding: 12px 24px;
+    background-color: var(--third);
+    color: var(--third);
+    border-radius: 6px;
+    resize: vertical;
+    /* optional: allow user to resize vertically */
+    height: auto;
+    /* respect rows attribute */
+}
+
+
+#submitRequest {
+    width: auto;
+    height: 60px;
+    background-color: var(--second);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#submitRequest:hover {
+
+    background-color: var(--third);
+    color: red;
+
+}
+
+
+/* === TRUST BAR === */
+.trust-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first);
+    color: var(--third);
+    padding: 15px 10px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.trust-item i {
+    color: var(--second);
+    font-size: 1.2rem;
+}
+
+/* === BEST SELLERS === */
+.best-sellers {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: var(--first);
+}
+
+.best-sellers h2 {
+    color: var(--third);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.bestproduct-card {
+    background-color: var(--third);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    width: 250px;
+}
+
+.bestproduct-card:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px var(--second);
+}
+
+.bestproduct-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.bestproduct-card h3 {
+    margin: 10px 0 5px;
+    color: var(--third);
+}
+
+.bestproduct-card p {
+    color: var(--third);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bestproduct-card button {
+    background-color: var(--second);
+    color: var(--third);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.bestproduct-card button:hover {
+    background-color: var(--first);
+    color: var(--third);
+}

@@ -1,0 +1,44 @@
+/* === FOOTER === */
+.site-footer {
+    background-color: var(--first);
+    color: var(--third);
+    padding: 40px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: var(--second);
+    margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col ul,
+.footer-col li,
+.footer-col a {
+    color: var(--third);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}

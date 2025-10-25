@@ -1,0 +1,102 @@
+:root {
+    --first: #00385d;
+    --second: #e50022;
+    --third: #ffffff;
+}
+
+.navbar-container {
+    background-color: var(--first);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    width: 160px;
+    /* desired rectangle width */
+    height: 50px;
+    /* desired rectangle height */
+    overflow: hidden;
+    /* hide extra part of the image */
+    border-radius: 8px;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* zoom and crop */
+    object-position: center;
+}
+
+#navbar-list {
+    display: flex;
+    gap: 50px;
+
+    padding: 10px;
+    list-style: none;
+}
+
+#navbar-list li {
+    margin: 0;
+    list-style: none;
+}
+
+#navbar-list li a {
+    display: block;
+    padding: 10px;
+    color: var(--third);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.25s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+#navbar-list li a:hover {
+    background-color: var(--second);
+    color: var(--third);
+}
+
+#navbar-list li a:focus-visible {
+    outline: 2px solid var(--third);
+    outline-offset: 2px;
+}
+
+/* Active/Current Page */
+#navbar-list li a.active {
+    background-color: var(--first);
+    color: var(--third);
+}
+
+/* Special Buttons (Login/Register/Logout) */
+#navbar-list li a[href="login.html"],
+#navbar-list li a[href="register.html"] {
+    background-color: var(--second);
+    color: var(--third);
+    font-weight: bolder;
+}
+
+#navbar-list li a[href="login.html"]:hover,
+#navbar-list li a[href="register.html"]:hover {
+    background-color: var(--third);
+    color: var(--second);
+}
+
+#navbar-list li a[href="logout.html"] {
+    background-color: var(--second);
+    color: var(--third);
+}
+
+#navbar-list li a[href="logout.html"]:hover {
+    background-color: #b3001a;
+    /* ✅ Fixed: rgba doesn't work with hex */
+    color: var(--third);
+}
+
+/* Cart Icon Styling */
+#navbar-list li a[href="cart.html"] {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

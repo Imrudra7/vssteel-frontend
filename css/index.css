@@ -1,0 +1,28 @@
+:root {
+    --first: #00385d;
+    --second: #e50022;
+    --third: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--first);
+    color: var(--third);
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-family: Google Sans, Roboto, Arial, sans-serif;
+
+}
+
+#mainIdx {
+
+    min-height: 80vh;
+    /* min-width: 100vw; */
+    display: flex;
+    justify-content: center;
+
+}
