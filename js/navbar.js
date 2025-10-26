@@ -82,7 +82,7 @@ const navbarController = {
 // and after the user logs in or out.
 document.addEventListener("DOMContentLoaded", function () {
 
-    fetch("../repeatHTML/navbar.html")
+    fetch("../navbar.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar").innerHTML = data;
